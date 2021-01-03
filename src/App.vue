@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -13,7 +9,28 @@
   font-family Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  color white
+  .form-control
+    color white
+    text-align center
+    background transparent !important
+
+    &::placeholder
+      color white
+      text-align center
+
+    &:input
+      color white
+      text-align center
+
+.carousel-indicators
+  bottom -25px !important
+
+.custom-select
+  background-color transparent !important
+  color white !important
+// vh-center()
+//   display flex
+//   justify-content center
+//   align-items center
 </style>
